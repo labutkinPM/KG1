@@ -2,7 +2,7 @@
 #include <windows.h>
 #include <vector>
 using namespace std;
-////Простейшим алгоритмом растрирования отрезка
+////The simplest algorithm for rasterizing a segment
 //
 //void line(int x1, int y1, int x2, int y2)
 //{
@@ -30,7 +30,7 @@ using namespace std;
 //    return 0;
 //}
 
-//Брезенхема 
+//Algorythm of Brezenham
 
 //void bresenham(int x1, int y1, int x2, int y2)
 //{
@@ -65,7 +65,7 @@ using namespace std;
 //}
 
 
-//второе задание
+//task2
 void drawLine(int x1, int y1, int x2, int y2, int r, int g, int b) {
 	HDC hdc = GetDC(GetConsoleWindow());
 	const int deltaX = abs(x2 - x1);
